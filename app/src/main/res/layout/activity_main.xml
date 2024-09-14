@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#c8a2c8">
+
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="308dp"
+        android:layout_height="166dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/logo5" />
+
+    <RadioGroup
+        android:id="@+id/userTypeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_background" >
+
+
+        <Button
+            android:id="@+id/existingUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existing"
+            android:textColor="#FFFF"
+            android:layout_marginLeft="4dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/newUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Users"
+            android:checked="true"
+            android:background="FFFFF"
+            android:textColor="@color/black">
+
+        </Button>
+
+
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_below="@id/userTypeToggle">
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginTop="5dp"
+            android:drawableEnd="@drawable/username"
+            />
+
+
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Password"
+            android:drawableEnd="@drawable/password"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="425dp"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+
+
+        android:layout_centerHorizontal="true" />
+
+    <!-- Forgot Password Text -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:padding="8dp" />
+
+    <!-- OR Divider -->
+    <TextView
+        android:id="@+id/orDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="—OR—"
+        android:textColor="@android:color/white" />
+
+    <!-- Social Media Login Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orDivider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!-- Facebook Button -->
+        <ImageButton
+            android:id="@+id/facebookLogin"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Google Button -->
+        <ImageButton
+            android:id="@+id/googleLogin"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:src="@drawable/google"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+
+    <!-- Sign Up Button -->
+</RelativeLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_image.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Optional: white background color for better visibility -->
+    <corners android:radius="100dp"/> <!-- Large radius to ensure it's a circle -->
+</shape>
